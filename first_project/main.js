@@ -1,13 +1,15 @@
 // Modules
 const {app, BrowserWindow} = require('electron')
+const colors = require('colors')
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
 
-// Create a new BrowserWindow when `app` is ready
-function createWindow () {
+console.log(colors.rainbow("Hello World"))
 
+// Create a new BrowserWindow when `app` is ready
+function createWindow () { 
   mainWindow = new BrowserWindow({
     width: 1000, height: 800,
     webPreferences: {
